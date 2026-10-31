@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Lee los artículos de NEXORA sobre inteligencia artificial, desarrollo, tecnología e innovación."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="NEXORA">
+    <meta property="og:title" content="NEXORA | Artículo">
+    <meta property="og:description" content="Artículo de NEXORA sobre tecnología e innovación.">
+    <title>Artículo | NEXORA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                NEXORA
+            </a>
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="index.html">
+                    Inicio
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="nosotros.html">
+                    Nosotros
+                </a>
+                <a href="contacto.html">
+                    Contacto
+                </a>
+            </nav>
+            <a href="blog.html" class="header-button">
+                Explorar artículos
+            </a>
+            <button
+                class="menu-toggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =================================================
+             PLANTILLA DE ARTÍCULO
+             Los elementos con id se llenan desde JavaScript
+             con los datos de js/articulos.js
+             ================================================= -->
+        <article class="article-page" id="articulo">
+
+            <header class="article-header">
+                <div class="article-header-content">
+                    <div class="article-meta">
+                        <span id="articulo-categoria"></span>
+                        <time id="articulo-fecha"></time>
+                    </div>
+                    <h1 id="articulo-titulo">
+                        Cargando artículo...
+                    </h1>
+                    <p class="article-intro" id="articulo-intro"></p>
+                    <div class="article-author">
+                        <div class="author-avatar">
+                            N
+                        </div>
+                        <div>
+                            <strong id="articulo-autor"></strong>
+                            <span id="articulo-autor-rol"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- IMAGEN PRINCIPAL -->
+            <div class="article-cover">
+                <div class="article-cover-visual" aria-hidden="true">
+                    <div class="article-cover-grid"></div>
+                    <div class="article-cover-orbit orbit-one"></div>
+                    <div class="article-cover-orbit orbit-two"></div>
+                    <div class="article-cover-core" id="articulo-cover"></div>
+                </div>
+            </div>
+
+            <!-- CONTENIDO -->
+            <div class="article-layout">
+                <aside class="article-sidebar" id="articulo-indice">
+                    <span>
+                        EN ESTE ARTÍCULO
+                    </span>
+                </aside>
+                <div class="article-content" id="articulo-contenido">
+                    <noscript>
+                        <p>
+                            Este artículo necesita JavaScript para mostrarse.
+                            Activa JavaScript en tu navegador o vuelve al
+                            <a href="blog.html">blog</a>.
+                        </p>
+                    </noscript>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- ARTÍCULOS RELACIONADOS -->
+        <section class="related-articles section" id="relacionados">
+            <div class="section-header">
+                <div>
+                    <span class="hero-eyebrow">
+                        CONTINÚA EXPLORANDO
+                    </span>
+                    <h2>
+                        También podría interesarte.
+                    </h2>
+                </div>
+            </div>
+            <div class="articles-grid" id="articulo-relacionados"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    NEXORA
+                </a>
+                <p>
+                    Ideas que conectan tecnología y futuro.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>
+                    Explorar
+                </h3>
+                <a href="index.html">
+                    Inicio
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="nosotros.html">
+                    Nosotros
+                </a>
+                <a href="contacto.html">
+                    Contacto
+                </a>
+            </div>
+            <div class="footer-column">
+                <h3>
+                    Categorías
+                </h3>
+                <a href="blog.html">
+                    Inteligencia Artificial
+                </a>
+                <a href="blog.html">
+                    Desarrollo
+                </a>
+                <a href="blog.html">
+                    Tecnología
+                </a>
+                <a href="blog.html">
+                    Innovación
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 NEXORA. Todos los derechos reservados.
+            </p>
+            <p>
+                Medio digital ficticio para fines de demostración
+                y desarrollo web.
+            </p>
+        </div>
+    </footer>
+
+    <!-- El orden importa: datos → script global (menú) → lógica del artículo -->
+    <script src="js/articulos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/articulo.js"></script>
+</body>
+</html>
